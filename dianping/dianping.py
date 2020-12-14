@@ -8,6 +8,7 @@ import re
 from lxml import etree
 import requests
 
+
 class DianpingComment:
     font_size = 14
     start_y = 23
@@ -29,7 +30,6 @@ class DianpingComment:
             print('不想写跳过验证了')
             # self._browser = self._init_browser()
             # self._handle_ban()
-
 
     def run(self):
         self._css_link = self._get_css_link(self._cur_request_url)
